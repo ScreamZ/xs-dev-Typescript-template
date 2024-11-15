@@ -1,0 +1,6 @@
+[env]
+# Set a different upload speed for ESP32, otherwise it will fail to upload
+UPLOAD_SPEED = "115200"
+
+[tasks]
+xsbug-mac = "open ${MODDABLE}build/bin/mac/release/xsbug.app"

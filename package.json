@@ -1,0 +1,16 @@
+{
+  "name": "@screamz/iot-moddable-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": "./dist/main.js",
+  "scripts": {
+    "build:dev": "bun build --entrypoints src/main.ts --outdir dist --packages external --watch",
+    "build:release": "bun build --entrypoints src/main.ts --outdir dist --packages external --minify"
+  },
+  "devDependencies": {
+    "@moddable/typings": "^5.2.0",
+    "@types/bun": "^1.1.13"
+  },
+  "author": "Andréas HANSS <contact@codingspark.io>",
+  "license": "MIT"
+}

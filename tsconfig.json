@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "outDir": "dist",
+    "module": "es2022",
+    "sourceMap": true,
+    "target": "ES2022",
+    "types": [
+      "./node_modules/@moddable/typings/xs",
+      "./node_modules/@moddable/typings/mcpack"
+    ]
+  },
+  "include": ["src/main.ts"]
+}
