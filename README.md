@@ -40,7 +40,7 @@ Before injecting the code to the emulator or device we need to transpile the Typ
 
 Therefore you can just do the following
 
-**In development**
+### In development
 
 Open a shell and run the following commands:
 
@@ -54,7 +54,7 @@ Then open another shell and run the following command whenever you want to send 
 xs-dev run
 ```
 
-**In release**
+### In release
 
 Open a shell and run the following commands:
 
@@ -70,3 +70,9 @@ xs-dev build --mode production
 
 For more details about building and running the code, please refer to the https://xs-dev.js.org/features/run/.
 What this template does is only manage the TypeScript files and the bundling process. The rest is up to you.
+
+## Additional information
+
+To support what I call « injected libraries » we define `--packages external` to the bundler, this allows to not package the libraries that are already in the Moddable SDK. As current API are not available in `node_modules` we need to do that.
+
+Bun treats any import which path do not start with `.`, `..` or `/` as package.
