@@ -1,5 +1,9 @@
 # Basic TypeScript templates starter for Embedded Systems
 
+> [!IMPORTANT]
+> This starter template is meant to be used with the Moddable SDK, which is a JS runtime for embedded systems.
+> Learn how to setup an Embedded JavaScript project using [xs-dev](https://xs-dev.js.org/).
+
 ## Installation
 
 For the sake of simplicity, we advise you to use mise-en-place to manage your project.
